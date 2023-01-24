@@ -1,0 +1,878 @@
+/*Descargando el link vamos a traerle una fuente a toda nuestra pagina, llamandola y colocandola con un font-family
+    en nustra class=''*/
+    @font-face {
+        font-family: bebas;
+        src: url(../assets/BebasNeue-Regular.ttf);
+    }
+
+/* Asi siempre voy a empezar mi CSS, estoy reiniciando mi pagina, le saso el maren y el espacio 
+    que nos trae por defecto para despues maniularlo como quiera.*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        list-style-type: none;
+        /*Nos va a sacar los items que vienen por defecto*/
+    }
+
+/*Modifique todas las palabras que tienen la class="resaltar"*/
+    .resaltar {
+        color: #c93b3b;
+    }
+
+/*HEADER*/
+
+    .header {
+        font-family: bebas;
+        background-color: #6f9ac7;
+        font-size: 32px;
+    }
+
+/*Tomamos las el nav y las listas*/
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-items: center;
+        /*me va a centrar mis items*/
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .headerLinks {
+        color: #131212ee;
+        transition: 0.5s;
+    }
+
+    .headerLinks:hover {
+        transform: scale(1, 1.05);
+        color: #fffee1;
+    }
+
+/*MAIN*/
+
+/*EMPEZAMOS CON LA PRIMERA PARTE*/
+    .seccion {
+        background-image: url(../assets/fondoSeccion.jpg);
+        width: 100%;
+        height: 90vh;
+        font-family: bebas;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        letter-spacing: 1px;
+        font-size: 40px;
+    }
+
+    .seccionDiv {
+        display: flex;
+        flex-direction: column;
+        padding: 100px 50px;
+    }
+
+    .seccionTitulo {
+        font-size: 45px;
+    }
+
+    .seccionDiv p {
+        font-size: 30px;
+        width: 65%;
+    }
+
+
+/*BOTON*/
+    .boton {
+        color: #ea2a15;
+        background-color: #131212ee;
+        font-size: 20px;
+        /*tamaño de la letra*/
+        padding: 10px;
+        width: 150px;
+        border-radius: 5px;
+        /*Le di un pequeño borde a la caja*/
+        font-family: bebas;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boton:hover {
+        transform: scale(1, 1.05);
+        color: rgba(241, 250, 255, 0.933);
+    }
+
+/*SECCION 2*/
+
+/*Empezamos a modificar la seccion2*/
+
+    .seccion2 {
+        background-color: rgba(241, 250, 255, 0.933);
+        width: 100%;
+        height: 95vh;
+    }
+
+    .divSeccion2 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-family: bebas;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+}
+
+    .modeloSeccion2 {
+        width: 500px;
+        object-fit: cover;
+        
+    }
+
+    .infoTitulo {
+        font-size: 32px;
+    }
+
+    .nosotros {
+        font-size: 25px;
+    }
+
+/*FONDO*/
+
+    .fondo {
+        background-image: url(../assets/FondoZapatillas.webp); /*coloque el fondo*/
+        width: 100%;
+        height: 200px;
+        /*Le di un ancho y un alto*/
+        background-attachment: fixed;
+    }   
+
+/*seccion 3*/
+    .nuestrosProductosDestaacados {
+        background-color: rgba(241, 250, 255, 0.933);
+        font-family: bebas;
+        padding: 5px;
+        width: 100%;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        font-size: 25px;
+    }      
+    
+    
+    .seccion3 {
+        background-image: linear-gradient(  rgba(241, 250, 255, 0.933), rgb(69, 69, 128));
+        padding: 20px;
+        height: 100%;
+        width: 100%;
+        display: flex; /*me da el poder de modificar las cartas*/
+        flex-direction: row;
+        justify-content: space-around; 
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+
+    .productosDestacados{
+        background-color: #f1faffee;
+        width: 25%;
+        min-height: 300px;
+        font-family: bebas;
+        font-size: 25px;
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productosDestacados:hover {
+        background: #449e9e;
+        transform: scale(1, 1.05);
+    }
+
+    .productosDestacados img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .descripcionDestacada {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .descripcionDestacada a {
+        color: #131212ee;
+        background-color: #aa3c3cee;
+        width: 100px; 
+        padding: 10px;
+        align-self: flex-end; 
+        text-align: center; 
+    }
+
+/*SECCION 4*/
+    .masNosotros {
+        background-image: linear-gradient( rgb(69, 69, 128), rgba(241, 250, 255, 0.933));
+        color: #ffff;
+        min-height: 25vh;
+        max-height: 25%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .informacion {
+        font-family: bebas; 
+        font-size: 30px;
+        color: #000;
+        text-transform: uppercase;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+    }
+
+    .p1 {
+        background-color: #449e9e;
+    }
+
+    .p2 {
+        background-color: #63a046;
+    }
+
+    .p3 {
+        background-color: #c4469aee;
+    }
+
+
+    /*FOOTER*/
+    .card {
+        font-family: bebas;
+        background-color: rgba(241, 250, 255, 0.933);
+    }
+
+    .card-header {
+        font-size: 32px;
+        
+    }
+
+
+/*ARANCAMOS CON LA PAGINA CONTACTOS*/
+
+/*INICIO CONTACTO*/
+    .contacto {
+        background-image: url(../assets/fondoSeccion.jpg);
+        width: 100%;
+        height: 90vh; 
+        font-family: bebas;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        letter-spacing: 1px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .tituloContacto {
+        font-size: 60px;
+        padding: 245px 50px;
+    }
+
+    /*FORMULARIO Y IMG*/
+    
+    .formulario {
+        background-color: #a83232ee;
+        color: #ffff;
+        gap: 10px; 
+        padding: 10px; 
+        width: 50%; 
+        border-radius: 5px; 
+    }
+
+    .formularioContenedor { 
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        font-family: bebas;
+        font-size: 20px;
+    }
+
+    .formularioContenedor input { 
+        padding: 10px;
+        font-family: bebas;
+        border-radius: 5px;
+    }
+
+    .formularioContenedor textarea { 
+        resize: none; 
+    }
+
+    .formularios { 
+        background-color: #000;
+        display: flex; 
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .formularios img {
+        padding: 20px;
+        width: 50%; /*tamaño*/
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*Ubicacion*/ 
+
+    .ubicacion {
+        font-family: bebas;
+        background-image: linear-gradient( rgb(69, 69, 128), rgba(190, 37, 170, 0.933));
+        margin: 25px;
+        padding: 10px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ubicacion iframe  {
+        width: 70%; 
+    }
+
+    .ubicacion h2 {
+        font-size: 32px;
+    }
+
+    .ubicacion p {
+        font-size: 25px;
+    }
+
+    /*Empezamos a trabajar nuestros productos*/
+
+    .nuestrosProductos{
+        background-image: url(../assets/fondoSeccion.jpg);
+        width: 100%;
+        height: 90vh; 
+        font-family: bebas;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        letter-spacing: 1px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .tituloProductos {
+        font-size: 60px;
+        padding: 245px 50px;
+    }
+
+        /*cree el contenedor de las tarjetas*/
+
+    .tituloTarjetas {
+        font-family: bebas;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 75px;
+        font-size: 40px;
+    }
+    
+    .tarjetas {
+        background-color: #274250ee;
+        padding: 20px;
+        height: 100%;
+        width: 100%;
+        display: flex; /*me da el poder de modificar las cartas*/
+        flex-direction: row;
+        justify-content: space-around; 
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+
+    /*caracterise el fondo de las tarjetas*/
+    .tarjeta { 
+        background-color: #f1faffee;
+        width: 25%;
+        min-height: 300px;
+        font-family: bebas;
+        font-size: 25px;
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tarjeta:hover { 
+        background-color: #c4b6d6ee;
+        transform: scale(1.05, 1.05);
+    }
+
+    /*modifije la imagen de la tarjeta*/
+    .tarjeta img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    /*lo que tenia adentro la tarjeta*/
+    .descripcionTarjeta {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /*el boton de la tarjeta*/
+    .descripcionTarjeta a {
+        color: #e77f7fee;
+        background-color: #131212ee;
+        width: 100px;
+        padding: 10px;
+        align-self: flex-end; 
+        text-align: center; 
+    }
+
+    .precio {
+        padding: 10px;
+        border-top: 1px solid #c02020ee;
+        border-bottom: 1px solid #a02525ee;
+    }
+
+    /*seguimos con la otra seccion OFERTAS*/
+    .ofertas {
+        background-image: radial-gradient(rgba(62, 141, 155, 0.973), rgb(134, 80, 80)); /*Nuevo efecto de fondo*/
+        display: flex; /*me da el poder de modificar las cartas*/
+        flex-direction: row;
+        justify-content: space-around; /*con esta pripoedad acomode las cartas*/
+        gap: 20px;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+
+    /*OPINIONES*/
+    .portadaopiniones {
+        background-image: url(../assets/fondoSeccion.jpg) ;
+        background-size: cover;
+        width: 100%;
+        height: 90vh; /*Con estas propiedades les voy a dar tamaño a la imagen , width: ancho. height: alto.*/
+        font-family: bebas;
+        background-position: center;
+        background-repeat: no-repeat;
+        letter-spacing: 1px;
+        display: flex;
+        justify-content: space-around;
+        object-fit: cover;
+    }
+
+    .tituloOpiniones {
+        font-size: 60px;
+        padding: 245px 50px;
+    }
+
+    .opinionesTitulo{
+        background-color: #449e9e;
+        color: #000;
+        font-size: 45px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: bebas;
+    }
+
+    .opiniones {
+        background-image: linear-gradient( #449e9e, #ffff);
+        padding: 10px 10px;
+        display: grid; 
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+    }
+
+    .opinion {
+        background-color: #ffff;
+        text-align: center;
+        font-family: bebas;
+        border: 1px solid #000;
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .o1{
+        background-color: #63a046;
+    }
+
+    .o2{
+        background-color: #bfd11c;
+    }
+
+    .o3{
+        background-color: #14cedb;
+    }
+
+    .o4{
+        background-color: #d48e8e;
+    }
+
+    .o5{
+        background-color: #6652d6;
+    }
+
+    .o6{
+        background-color: #c92103;
+    }
+
+    .fondoProducto {
+        font-family: bebas;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 75px;
+        font-size: 40px;
+    }
+
+    /*opiniones img*/
+
+
+
+
+
+/*MEDIA*/
+
+@media only screen and (min-width:320px) {
+
+    .header {
+        font-size: 28px;
+    }
+
+    /*Tomamos las el nav y las listas*/
+    nav ul {
+        flex-direction: column;
+    }
+
+    /*SECCION*/
+    .seccionTitulo {
+        font-size: 25px;
+    }
+
+    .seccionDiv p {
+        font-size: 22px;
+        width: 100%;
+    }
+
+    /*SECCION 2*/
+    .modeloSeccion2 {
+        width: 225px;
+    }
+
+    /*FONDO*/
+    .fondo {
+        height: 100px;
+    }
+
+    /*SECCION 3*/
+    .productosDestacados{
+        width: 100%;
+    }
+
+    /*CONTACTOS*/
+
+    .formularios {
+        flex-direction: column;
+    }
+
+    .formularios img {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .formulario {
+        width: 100%; 
+    }
+
+    /*UBICACION*/
+
+    .ubicacion {
+        width: 90%;
+    }
+
+    .ubicacion iframe  {
+        width: 100%; 
+    }
+
+    .ubicacion h2 {
+        font-size: 25px;
+    }
+
+    .ubicacion p {
+        font-size: 20px;
+    }
+    /*PRODUCTOS*/
+    .tituloTarjetas {
+        padding: 27px;
+        font-size: 25px;
+    }
+
+    .tarjetas {
+        width: 100%;
+        padding: 25px; 
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .tarjeta {
+        width: 100%;
+    }
+
+    .descripcionTarjeta {
+        padding: 5px;
+        gap: 5px;
+    }
+
+    /*OPINIONES*/
+
+    .opiniones {
+        grid-template-columns: auto;
+    }
+
+    .fondoProducto{
+        padding: 27px;
+        font-size: 25px;
+    }
+}
+
+
+@media only screen and (min-width:480px) {
+    .header {
+        font-size: 28px;
+    }
+
+    /*Tomamos las el nav y las listas*/
+    nav ul {
+        flex-direction: column;
+    }
+
+    /*SECCION*/
+    .seccionTitulo {
+        font-size: 32px;
+    }
+
+    .seccionDiv p {
+        font-size: 29px;
+        width: 100%;
+    }
+
+    /*SECCION 2*/
+    .modeloSeccion2 {
+        width: 400px;
+    }
+
+    /*FONDO*/
+    .fondo {
+        height: 125px;
+    }
+
+    /*SECCION 3*/
+    .productosDestacados{
+        width: 50%;
+    }
+
+    .ubicacion {
+        width: 95%;
+    }
+
+    /*PRODUCTOS*/
+    .tituloTarjetas {
+        padding: 35px;
+        font-size: 30px;
+    }
+
+    .tarjetas {
+        width: 100%;
+        padding: 25px; 
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .tarjeta {
+        width: 65%;
+    }
+
+    /*OPINIONES*/
+
+    .opiniones {
+        grid-template-columns: auto auto;
+    }
+
+    .fondoProducto {
+        padding: 35px;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 775px) {
+    .header {
+        font-size: 32px;
+    }
+
+    /*Tomamos las el nav y las listas*/
+    nav ul {
+        flex-direction: row;
+    }
+
+    /*SECCION*/
+    .seccionTitulo {
+        font-size: 40px;
+    }
+
+    .seccionDiv p {
+        font-size: 32px;
+        width: 75%;
+    }
+
+    /*SECCION 2*/
+    .modeloSeccion2 {
+        width: 500px;
+    }
+
+    /*FONDO*/
+    .fondo {
+        height: 155px;
+    }
+
+    /*SECCION 3*/
+    .productosDestacados{
+        width: 35%;
+    }
+
+    /*CONTACTOS*/
+
+    .formularios {
+        flex-direction: row-reverse;
+    }
+
+    .formularios img {
+        padding: 10px;
+        width: 50%;
+    }
+
+    /*UBICACION*/
+
+    .ubicacion {
+        width: 95%;
+    }
+
+    .ubicacion iframe  {
+        width: 75%; 
+    }
+
+    .ubicacion h2 {
+        font-size: 28px;
+    }
+
+    .ubicacion p {
+        font-size: 23px;
+    }
+
+    /*PRODUCTOS*/
+    .tituloTarjetas {
+        padding: 50px;
+        font-size: 35px;
+    }
+
+    .tarjeta {
+        width: 40%;
+    }
+
+    /*OPINIONES*/
+
+    .opiniones {
+        grid-template-columns: auto auto auto;
+    }
+
+    .fondoProducto {
+        padding: 50px;
+        font-size: 35px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .header {
+        font-size: 32px;
+    }
+
+    /*Tomamos las el nav y las listas*/
+    nav ul {
+        flex-direction: row;
+    }
+
+    /*SECCION*/
+    .seccionTitulo {
+        font-size: 45px;
+    }
+
+    .seccionDiv p {
+        font-size: 32px;
+        width: 65%;
+    }
+
+    /*SECCION 2*/
+    .modeloSeccion2 {
+        width: 600px;
+    }
+
+    /*FONDO*/
+    .fondo {
+        height: 200px;
+    }
+
+    /*SECCION 3*/
+    .productosDestacados{
+        width: 25%;
+    }
+
+    .ubicacion h2 {
+        font-size: 30px;
+    }
+
+    .ubicacion p {
+        font-size: 25px;
+    }
+
+    /*PRODUCTOS*/
+    .tituloTarjetas {
+        padding: 70px;
+        font-size: 40px;
+    }
+
+    .tarjeta {
+        width: 25%;
+    }
+
+    .fondoProducto{
+        padding: 70px;
+        font-size: 40px;
+    }
+}
